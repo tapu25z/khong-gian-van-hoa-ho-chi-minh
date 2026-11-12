@@ -3,693 +3,267 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BÁC HỒ VÀ CHUẨN MỰC SỐNG ĐẸP: TỪ BÀI HỌC GIẢN DỊ ĐẾN MÔ HÌNH HÀNH ĐỘNG CỦA SINH VIÊN CÔNG NGHỆ THÔNG TIN | BÙI HUỲNH TÂY - UIT</title>
-  <meta name="description" content="Bài viết, sản phẩm truyền thông và mô hình giải pháp học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh của tác giả Bùi Huỳnh Tây - Trường Đại học Công nghệ Thông tin ĐHQG-HCM.">
-  <meta name="author" content="Bùi Huỳnh Tây - Trường Đại học Công nghệ Thông tin ĐHQG-HCM">
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="BÁC HỒ VÀ CHUẨN MỰC SỐNG ĐẸP: TỪ BÀI HỌC GIẢN DỊ ĐẾN MÔ HÌNH HÀNH ĐỘNG CỦA SINH VIÊN CÔNG NGHỆ THÔNG TIN">
-  <meta property="og:description" content="Khám phá mô hình '3 Tự - 3 Tiên phong' và giải pháp số hoá học tập tư tưởng Hồ Chí Minh của sinh viên UIT ĐHQG-HCM.">
-  <meta property="og:image" content="images/portrait_bacho.jpg">
-  <meta property="og:type" content="article">
-  <meta name="theme-color" content="#b71c1c">
-
+  <title>Bác Hồ và chuẩn mực sống đẹp: Từ bài học giản dị đến mô hình hành động của sinh viên công nghệ | Blog Bùi Huỳnh Tây</title>
+  <meta name="description" content="Blog cá nhân của Bùi Huỳnh Tây (Sinh viên UIT ĐHQG-HCM) chia sẻ về bài học giản dị từ Bác Hồ và mô hình hành động 3 Tự - 3 Tiên phong.">
+  <meta name="author" content="Bùi Huỳnh Tây">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Thanh tiến trình đọc bài viết -->
+  <!-- Thanh tiến trình đọc -->
   <div id="reading-progress-bar"></div>
 
-  <!-- Top bar tin tức & công cụ -->
-  <div class="top-notice-bar">
-    <div class="top-bar-container">
-      <div class="top-bar-left">
-        <span class="top-badge">TUỔI TRẺ HỌC TẬP VÀ LÀM THEO LỜI BÁC</span>
-        <span>Trường Đại học Công nghệ Thông tin – ĐHQG-HCM (UIT)</span>
-      </div>
-      <div class="top-bar-right">
-        <button id="btn-print-post" class="btn-icon-pill" title="In hoặc lưu PDF bài viết">
-          <span>🖨️</span> In bài viết
-        </button>
-        <button id="theme-toggle-btn" class="theme-toggle-btn" title="Chuyển chế độ sáng / tối">🌙</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Header chính của Blog -->
-  <header class="main-header">
-    <div class="header-inner">
-      <a href="#" class="header-brand">
-        <div class="header-logo-icon">⭐</div>
-        <div class="header-brand-text">
-          <h1>KHÔNG GIAN VĂN HÓA HỒ CHÍ MINH UIT</h1>
-          <p>Diễn đàn tư tưởng, lối sống đẹp & giải pháp sáng tạo của sinh viên ĐHQG-HCM</p>
-        </div>
+  <!-- Header cá nhân giản dị -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-link">
+        <div class="brand-name">Bùi Huỳnh Tây</div>
+        <div class="brand-sub">Trường Đại học Công nghệ Thông tin – ĐHQG-HCM</div>
       </a>
 
       <nav class="header-nav">
-        <ul class="nav-links">
-          <li><a href="#dat-van-de" class="active">Bài viết</a></li>
-          <li><a href="#mo-hinh-3tu-3tienphong">Mô hình giải pháp</a></li>
-          <li><a href="#san-pham-truyen-thong">Sản phẩm truyền thông</a></li>
-          <li><a href="#author-section">Tác giả</a></li>
-          <li><a href="#comments-anchor">Bình luận</a></li>
-        </ul>
+        <a href="#bai-viet">Bài viết</a>
+        <a href="#mo-hinh">Mô hình giải pháp</a>
+        <a href="#tac-gia">Về tác giả</a>
+        <button id="theme-toggle" class="theme-toggle-btn" title="Chế độ sáng/tối">🌙</button>
       </nav>
     </div>
   </header>
 
-  <!-- Banner Trang trọng & Tiêu đề chuyên mục -->
-  <section class="hero-editorial-banner">
-    <div class="banner-content">
-      <div class="banner-tag">SẢN PHẨM TRUYỀN THÔNG &amp; MÔ HÌNH GIẢI PHÁP ĐOÀN - HỘI</div>
-      <h2 class="banner-title">HỌC TẬP VÀ LÀM THEO TƯ TƯỞNG, ĐẠO ĐỨC, PHONG CÁCH HỒ CHÍ MINH</h2>
-      <p class="banner-subtitle">Kiến tạo giá trị thực tiễn từ giảng đường đại học: Biến lời dạy của Người thành lẽ sống và hành động mỗi ngày của người kỹ sư tương lai.</p>
-    </div>
-  </section>
+  <!-- Layout trang -->
+  <div class="page-layout">
 
-  <!-- Layout chính: 2 Cột (Bài viết bên trái + Sidebar bên phải) -->
-  <main class="page-container">
+    <!-- Cột bài viết -->
+    <main id="bai-viet" class="post-card">
 
-    <!-- CỘT BÀI VIẾT CHÍNH -->
-    <article class="main-content">
-
-      <!-- Breadcrumbs -->
-      <nav class="post-breadcrumb" aria-label="breadcrumb">
-        <a href="#">Trang chủ</a> <span>/</span>
-        <a href="#">Học tập và làm theo Bác</a> <span>/</span>
-        <span>Sinh viên UIT trong kỷ nguyên số</span>
-      </nav>
-
-      <!-- Post Header -->
-      <header class="post-header">
-        <h1 class="post-title">
-          BÁC HỒ VÀ CHUẨN MỰC SỐNG ĐẸP: TỪ BÀI HỌC GIẢN DỊ ĐẾN MÔ HÌNH HÀNH ĐỘNG "3 TỰ - 3 TIÊN PHONG" CỦA SINH VIÊN CÔNG NGHỆ THÔNG TIN
-        </h1>
-
-        <div class="post-meta-row">
-          <div class="author-chip">
-            <img src="images/author_avatar.jpg" alt="Ảnh tác giả Bùi Huỳnh Tây">
-            <div class="author-info-mini">
-              <div class="author-name">Bùi Huỳnh Tây</div>
-              <div class="author-org">Trường Đại học Công nghệ Thông tin, ĐHQG-HCM</div>
-            </div>
-          </div>
-
-          <div class="meta-stats">
-            <span class="meta-stat-item">📅 Thứ Sáu, 13/11/2026</span>
-            <span class="meta-stat-item">⏱️ 8 phút đọc</span>
-            <span class="meta-stat-item">👁️ 2,480 lượt xem</span>
-          </div>
-        </div>
-      </header>
-
-      <!-- Widget Nghe Podcast / Audio đọc bài -->
-      <div class="audio-player-box">
-        <button id="audio-play-btn" class="audio-btn" title="Nghe bản tin tóm tắt">▶</button>
-        <div class="audio-text">
-          <div class="audio-title">🎧 Nghe podcast bài viết: "Lời Bác soi đường người làm công nghệ"</div>
-          <div class="audio-desc">Chuyên mục Phát thanh Thanh niên UIT | Giọng đọc AI truyền cảm</div>
-        </div>
-        <div class="audio-progress">
-          <div class="audio-progress-bar"></div>
-        </div>
-        <div id="audio-time-display" style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted); min-width: 75px;">01:25 / 04:15</div>
+      <div class="post-meta">
+        <span>📅 13 tháng 11, 2026</span>
+        <span>•</span>
+        <span>Bởi <strong>Bùi Huỳnh Tây</strong></span>
+        <span>•</span>
+        <span>⏱️ 8 phút đọc</span>
       </div>
 
-      <!-- Sapo / Lời mở đầu -->
+      <h1 class="post-title">
+        Bác Hồ và chuẩn mực sống đẹp: Từ bài học giản dị đến mô hình hành động của sinh viên công nghệ
+      </h1>
+
       <div class="post-lead">
-        Di sản lớn nhất Bác Hồ để lại cho thế hệ trẻ không nằm trong những khẩu hiệu được treo trang trọng trên giảng đường, mà ở chính cách Người đã sống – giản dị, kỷ luật, trung thực, tinh thần tự học bền bỉ không ngừng nghỉ và trọn một đời phụng sự Tổ quốc, phụng sự nhân dân. Giữa nhịp sống hối hả của kỷ nguyên số và trí tuệ nhân tạo (AI), những giá trị ấy lại càng trở thành kim chỉ nam soi đường cho mỗi sinh viên Công nghệ Thông tin: từ việc đến lớp sớm vài phút, viết từng dòng code chỉn chu, nộp đồ án đúng hạn, cho đến khát vọng cống hiến tri thức vì sự phát triển của đất nước.
+        Di sản lớn nhất Bác Hồ để lại cho thế hệ trẻ không nằm trong những khẩu hiệu được treo trên tường, mà ở chính cách Người sống – giản dị, kỷ luật, trung thực và hết lòng vì người khác. Giữa nhịp sống giảng đường vội vã hôm nay, những giá trị ấy vẫn sáng lên từ những điều rất nhỏ: đi học sớm vài phút, nộp bài đúng hẹn, tự học mỗi ngày và biết dùng tri thức để giúp đỡ cộng đồng.
       </div>
 
-      <!-- POST BODY -->
-      <div class="post-body">
+      <div class="post-content">
 
-        <!-- MỤC 1 -->
-        <h2 id="dat-van-de" class="post-section-heading">
-          <span>I.</span> ĐẶT VẤN ĐỀ: VÌ SAO PHẢI BÀN VỀ "CHUẨN MỰC SỐNG ĐẸP" CỦA SINH VIÊN CÔNG NGHỆ?
-        </h2>
-
+        <!-- Phần 1 -->
+        <h2>1. Đặt vấn đề: Vì sao phải bàn về "chuẩn mực sống đẹp"?</h2>
         <p>
-          Trong kỷ nguyên bùng nổ của chuyển đổi số, dữ liệu lớn và trí tuệ nhân tạo, trường đại học không chỉ là cái nôi sản sinh ra những kỹ sư lành nghề, mà còn là môi trường rèn giũa nhân cách của những công dân số tương lai. Tuy nhiên, một nghịch lý đang âm thầm hiện hữu trong một bộ phận giới trẻ: kết quả học tập có thể rất cao, kỹ năng công nghệ có thể rất nhạy bén, nhưng tư cách, tính kỷ luật, đạo đức nghề nghiệp và ý thức trách nhiệm cộng đồng đôi khi chưa theo kịp.
+          Trong môi trường đại học hiện đại, nơi tri thức và công nghệ tăng trưởng từng ngày, một câu hỏi luôn khiến nhiều bạn trẻ trăn trở: <em>Làm sao để vừa vững chuyên môn, vừa giữ được một nhân cách đẹp và trách nhiệm với xã hội?</em>
+        </p>
+        <p>
+          Trước áp lực điểm số, sự tiện lợi của trí tuệ nhân tạo (AI) và vòng xoáy mạng xã hội, chúng ta đôi khi dễ rơi vào sự vội vã, ỷ lại và quên mất những giá trị cốt lõi. Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh chính là chiếc la bàn soi đường gần gũi nhất, giúp mỗi sinh viên tự rèn giũa bản thân từ những việc nhỏ bé, thiết thực mỗi ngày.
         </p>
 
-        <p>
-          Áp lực của những kỳ thi, những kỳ hạn đồ án dồn dập, cùng sự cuốn hút vô tận của các nền tảng mạng xã hội dễ khiến sinh viên rơi vào lối sống thực dụng, "sống ảo", hoặc chạy theo thành tích ngắn hạn. Thậm chí trong giới lập trình, sự ỷ lại thái quá vào các công cụ AI tạo sinh (Generative AI) đang làm mai một đi sự kiên nhẫn tự học và tư duy chiều sâu. Trước bối cảnh ấy, một câu hỏi lớn mang tính quyết định được đặt ra: <em>Học tập và làm theo Bác Hồ như thế nào để mỗi sinh viên Công nghệ Thông tin vừa giỏi chuyên môn, vừa sáng đạo đức nghề nghiệp, vừa hình thành được một "chuẩn mực sống đẹp" bền vững?</em>
-        </p>
-
-        <figure class="post-figure">
-          <img src="images/portrait_bacho.jpg" alt="Chủ tịch Hồ Chí Minh - Người là tấm gương sáng ngời về đạo đức cách mạng và tinh thần tự học">
-          <figcaption>
-            <strong>Hình 1:</strong> Chủ tịch Hồ Chí Minh (1890 – 1969) – Tấm gương mẫu mực trọn đời về tinh thần tự học, nếp sống giản dị, kỷ luật và tận tụy phụng sự đất nước. <em>(Tư liệu lịch sử lưu trữ)</em>
-          </figcaption>
-        </figure>
-
-        <p>
-          Bài viết này khẳng định: <strong>Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh</strong> không phải là những bài học lý luận trừu tượng, mà chính là con đường thực tế, khả thi và giàu sức sống nhất giúp sinh viên xây dựng chuẩn mực sống đẹp từ những việc nhỏ bé thường ngày, từ đó hình thành các mô hình giải pháp hành động cụ thể cho tuổi trẻ Đại học Quốc gia TP.HCM.
-        </p>
-
-        <!-- MỤC 2 -->
-        <h2 id="bai-hoc-gian-di" class="post-section-heading">
-          <span>II.</span> TỪ NHỮNG BÀI HỌC GIẢN DỊ CỦA BÁC ĐẾN TRÁCH NHIỆM SINH VIÊN HÔM NAY
-        </h2>
-
-        <h3 id="ky-luat-dung-hen">1. Kỷ luật – Đúng hẹn: Xương sống của đạo đức nghề nghiệp và sự tiến bộ</h3>
-        <p>
-          Chủ tịch Hồ Chí Minh luôn xem việc đúng giờ và giữ kỷ luật là biểu hiện cao nhất của sự tôn trọng bản thân và tôn trọng người khác. Trong kháng chiến gian khổ, có lần Bác đến dự và nói chuyện tại một lớp chỉnh huấn cán bộ. Trời mưa to tầm tã, đường rừng lầy lội, suối dâng ngập, nhưng Bác vẫn đến lớp đúng giờ như đã hẹn. Quần Bác xắn quá đầu gối, chiếc áo mưa ướt sũng. Khi các học viên xúc động và áy náy vì đã để Bác vất vả, Bác ôn tồn bảo:
-        </p>
-
-        <div class="quote-highlight">
-          <p>“Đã hẹn thì phải đến, đến cho đúng giờ. Thà mình chịu ướt còn hơn để cả lớp chờ uổng công. Thời gian quý báu lắm, quý từng phút của mình và phải quý từng phút của người khác!”</p>
-          <div class="quote-source">— Trích “Bác Hồ - Con người và Phong cách”, NXB Lao Động; Báo Điện tử ĐCSVN</div>
+        <div class="post-image">
+          <img src="images/portrait_bacho.jpg" alt="Chủ tịch Hồ Chí Minh">
+          <div class="post-image-caption">Chủ tịch Hồ Chí Minh (1890 – 1969) – Tấm gương ngời sáng về tinh thần tự học, lối sống giản dị và trọn đời vì nhân dân.</div>
         </div>
 
-        <figure class="post-figure">
-          <img src="images/bacho_chinhphu.png" alt="Chủ tịch Hồ Chí Minh và các thành viên Hội đồng Chính phủ lâm thời 1945">
-          <figcaption>
-            <strong>Hình 2:</strong> Chủ tịch Hồ Chí Minh cùng các thành viên Hội đồng Chính phủ Lâm thời nước Việt Nam Dân chủ Cộng hòa (1945). Phong cách làm việc đúng giờ, kỷ cương và liêm chính của Bác luôn là tấm gương soi cho muôn đời. <em>(Nguồn: Thông tấn xã Việt Nam - VNA)</em>
-          </figcaption>
-        </figure>
-
+        <!-- Phần 2 -->
+        <h2>2. Kỷ luật – Đúng hẹn: Xương sống của sự tiến bộ</h2>
         <p>
-          Câu chuyện giản dị ấy để lại bài học thấm thía: <strong>Kỷ luật chính là danh dự</strong>. Đối với sinh viên Đại học Công nghệ Thông tin (UIT), tinh thần kỷ luật của Bác soi chiếu trực tiếp vào từng buổi lên lớp: vào giảng đường sớm 5 phút, lắng nghe trọn vẹn bài giảng, nộp bài tập lớn và đồ án phần mềm trước hạn chót (deadline). Khi làm việc nhóm (teamwork), mỗi thành viên giữ trọn lời hứa về tiến độ chính là giữ gìn niềm tin và tôn trọng công sức của đồng đội.
+          Bác Hồ luôn xem đúng giờ là biểu hiện cao nhất của sự tôn trọng. Trong những năm tháng kháng chiến, dù trời mưa tầm tã, đường rừng lầy lội, Bác vẫn đến lớp chỉnh huấn đúng hẹn, quần xắn quá gối, áo mưa ướt sũng. Bác nói một câu giản dị mà thấm thía:
         </p>
 
-        <p>
-          Hơn thế nữa, trong ngành công nghệ phần mềm, kỷ luật còn là <em>kỷ luật công nghệ</em>: tuân thủ nghiêm ngặt chuẩn mực bảo mật, viết mã nguồn sạch (Clean Code), tôn trọng quyền riêng tư của người dùng, không bao giờ vì lợi ích trước mắt mà phát tán phần mềm độc hại hay đạo văn công nghệ. Đó chính là việc làm theo Bác từ cái gốc của sự trung thực.
-        </p>
-
-        <h3 id="gian-di-tiet-kiem">2. Giản dị – Tiết kiệm: Cái đẹp nằm ở sự vừa đủ, chống lãng phí tài nguyên</h3>
-        <p>
-          Suốt cuộc đời bôn ba cứu nước và trên cương vị lãnh tụ tối cao, Bác Hồ luôn giữ một phong cách sống giản dị đến mức thanh bạch: chiếc áo kaki đã sờn vai, đôi dép cao su đi khắp mọi nẻo đường kháng chiến, bữa ăn thanh đạm đĩa rau muống, con cá kho. Nhưng trong sự giản dị ấy là một triết lý sâu sắc: <em>“Cái đẹp nằm ở sự vừa đủ, không ở sự cầu kỳ, hào nhoáng bên ngoài.”</em>
-        </p>
-
-        <figure class="post-figure">
-          <img src="images/nhasan_bacho.jpg" alt="Nhà sàn Bác Hồ tại Thủ đô Hà Nội">
-          <figcaption>
-            <strong>Hình 3:</strong> Khu di tích Nhà sàn Bác Hồ tại Phủ Chủ tịch (Hà Nội) – Không gian sống và làm việc mộc mạc, biểu tượng bất diệt cho phong cách cần kiệm, liêm chính, gắn bó keo sơn với thiên nhiên và con người. <em>(Ảnh tư liệu bảo tàng)</em>
-          </figcaption>
-        </figure>
-
-        <p>
-          Học Bác đức tính tiết kiệm trong giảng đường hôm nay, sinh viên UIT bắt đầu từ những hành vi văn minh: mang theo bình nước cá nhân, tắt đèn và máy lạnh khi rời phòng học, in tài liệu hai mặt, giữ gìn tài sản chung của nhà trường.
-        </p>
-
-        <p>
-          Trong tư duy công nghệ, tiết kiệm ngày nay còn mang một chiều kích mới: <strong>Điện toán xanh (Green Computing)</strong>. Đó là ý thức tối ưu hóa thuật toán để tiết kiệm tài nguyên vi xử lý (CPU/GPU), giảm tiêu thụ điện năng tại các trung tâm dữ liệu, và quản trị thời gian số (Digital Well-being) – không lãng phí hàng giờ đồng hồ vào những nội dung độc hại, vô bổ trên mạng xã hội, mà dành năng lượng đó cho việc rèn luyện thể lực và trau dồi tri thức.
-        </p>
-
-        <h3 id="tu-hoc-suot-doi">3. Tinh thần Tự học suốt đời: Chìa khóa vàng của người kỹ sư thời đại mới</h3>
-        <p>
-          Chủ tịch Hồ Chí Minh là hiện thân vĩ đại của tinh thần tự học. Ra đi tìm đường cứu nước với hai bàn tay trắng, Người đã tự học tiếng Pháp, tiếng Anh, tiếng Nga, tiếng Trung... thông qua lao động thực tiễn: viết từ vựng lên cánh tay để vừa làm phụ bếp vừa nhẩm đọc, buổi tối viết bài gửi cho các tờ báo tiến bộ ở Paris. Người từng căn dặn cán bộ, đảng viên và tuổi trẻ:
-        </p>
-
-        <div class="quote-highlight">
-          <p>“Học hỏi là một việc phải tiếp tục suốt đời. Suốt đời phải học tập, không ai có thể tự cho mình là biết đủ rồi. Người không học tập thì như đi lùi, sẽ bị thời đại bỏ lại phía sau!”</p>
-          <div class="quote-source">— Lời Chủ tịch Hồ Chí Minh căn dặn tại Hội nghị cán bộ, 1954</div>
+        <div class="post-quote">
+          “Đã hẹn thì phải đến, đến cho đúng giờ. Thà mình chịu ướt còn hơn để cả lớp chờ uổng công. Thời gian quý báu lắm, quý từng phút của mình và phải quý từng phút của người khác.”
+          <div class="post-quote-author">— Trích mẩu chuyện “Thời gian quý báu lắm”, Báo Điện tử ĐCSVN</div>
         </div>
 
-        <figure class="post-figure">
-          <img src="images/sinhvien_hoctap.jpg" alt="Sinh viên UIT học tập nhóm và nghiên cứu công nghệ">
-          <figcaption>
-            <strong>Hình 4:</strong> Sinh viên Đại học Công nghệ Thông tin (ĐHQG-HCM) hăng say nghiên cứu khoa học, tự học và thảo luận nhóm – biến tri thức công nghệ thành năng lực nội tại.
-          </figcaption>
-        </figure>
-
         <p>
-          Lĩnh vực Công nghệ Thông tin là một trong những ngành có tốc độ thay đổi nhanh nhất trong lịch sử nhân loại. Những kiến thức hôm nay học được có thể bị lỗi thời chỉ sau vài năm nếu bản thân dừng bước. Tinh thần tự học theo gương Bác chính là động lực thôi thúc mỗi sinh viên UIT chủ động đọc tài liệu kỹ thuật gốc, nghiên cứu mã nguồn mở, không giấu dốt, sẵn sàng làm chủ những công nghệ lõi như AI, Blockchain, Cloud Computing và An toàn thông tin. Tự học không phải là đơn độc một mình, mà là học từ thầy cô, học từ bạn bè và học từ chính những thất bại khi kiểm thử phần mềm.
+          Là sinh viên ngành Công nghệ Thông tin tại UIT, bài học về sự đúng giờ và kỷ luật nhắc nhở mình mỗi ngày: vào giảng đường sớm 5 phút, nộp đồ án đúng hạn, tôn trọng tiến độ khi làm việc nhóm. Trong lập trình, kỷ luật còn là tính trung thực: viết code cẩn thận, tôn trọng bản quyền mã nguồn và bảo vệ an toàn thông tin người dùng.
         </p>
 
-        <h3 id="phung-su-cong-dong">4. Phụng sự cộng đồng: "Học để làm việc, làm người, giúp dân, giúp nước"</h3>
-        <p>
-          Trong một buổi Bác đến thăm lớp học Bình dân học vụ sau ngày Cách mạng Tháng Tám thành công, Bác ân cần hỏi một học viên: <em>“Các cháu học để làm gì?”</em> Người học viên thưa: <em>“Thưa Bác, học để biết chữ ạ.”</em> Bác mỉm cười, gật đầu rồi căn dặn:
-        </p>
-
-        <div class="quote-highlight">
-          <p>“Học để biết chữ là đúng, nhưng cái quan trọng hơn là học để làm việc, để giúp dân, giúp nước, chứ không phải học để làm quan!”</p>
-          <div class="quote-source">— Theo Đỗ Văn Quân – Đặng Ánh Tuyết, Tạp chí Giáo dục, số tháng 1/2005</div>
+        <div class="post-image">
+          <img src="images/bacho_chinhphu.png" alt="Bác Hồ và Hội đồng Chính phủ lâm thời 1945">
+          <div class="post-image-caption">Chủ tịch Hồ Chí Minh cùng các thành viên Hội đồng Chính phủ Lâm thời (1945). Phong cách làm việc đúng giờ và liêm chính của Bác là bài học vô giá. (Ảnh tư liệu VNA)</div>
         </div>
 
-        <figure class="post-figure">
-          <img src="images/bacho_thanhnien.png" alt="Bác Hồ cùng thế hệ thanh thiếu niên và học sinh">
-          <figcaption>
-            <strong>Hình 5:</strong> Chủ tịch Hồ Chí Minh với học sinh, thế hệ trẻ tương lai của đất nước (Hà Nội, 1956). Bác luôn đặt trọn niềm tin sắt son vào vai trò rường cột của thanh niên. <em>(Nguồn: Thông tấn xã Việt Nam - VNA)</em>
-          </figcaption>
-        </figure>
-
+        <!-- Phần 3 -->
+        <h2>3. Giản dị – Tiết kiệm: Ít ồn ào, nhiều hiệu quả</h2>
         <p>
-          Lời dạy ấy nhắc nhở sinh viên UIT rằng: mục đích tối hậu của việc học không chỉ dừng lại ở một tấm bằng loại giỏi hay một mức thu nhập cao cho riêng mình. <strong>Tri thức chỉ thực sự trọn vẹn khi nó trở thành giá trị phụng sự nhân dân và Tổ quốc</strong>. Một dòng code viết ra có thể giúp một người khuyết tật sử dụng máy tính dễ dàng hơn; một ứng dụng di động có thể giúp bà con nông dân kết nối tiêu thụ nông sản; một hệ thống tự động hóa có thể giúp bệnh viện phục vụ người bệnh kịp thời. Đó chính là cách sinh viên công nghệ cụ thể hóa lòng yêu nước và đạo đức phụng sự của Bác trong thế kỷ 21.
+          Suốt cuộc đời, Bác luôn giữ nếp sống mộc mạc: chiếc áo kaki sờn vai, đôi dép cao su giản dị, căn nhà sàn gỗ đơn sơ. Bác để lại một quan niệm sống sâu sắc: <em>“Cái đẹp nằm ở sự vừa đủ, không ở sự cầu kỳ.”</em>
+        </p>
+        <p>
+          Đối với sinh viên hôm nay, học Bác từ việc tiết kiệm không chỉ là tắt điện khi rời phòng, mang theo bình nước cá nhân, mà còn là <strong>tiết kiệm thời gian</strong> – tránh sa đà vào những nội dung độc hại trên mạng, quản lý quỹ thời gian biểu để học tập và rèn luyện thể chất một cách hiệu quả.
         </p>
 
-        <!-- MỤC 3: MÔ HÌNH GIẢI PHÁP & Ý TƯỞNG SỐ HÓA -->
-        <h2 id="mo-hinh-3tu-3tienphong" class="post-section-heading">
-          <span>III.</span> Ý TƯỞNG &amp; MÔ HÌNH GIẢI PHÁP: "HỆ SINH THÁI 3 TỰ - 3 TIÊN PHONG" DÀNH CHO SINH VIÊN UIT
-        </h2>
+        <div class="post-image">
+          <img src="images/nhasan_bacho.jpg" alt="Nhà sàn Bác Hồ">
+          <div class="post-image-caption">Căn nhà sàn giản dị của Bác tại Hà Nội – Nơi lưu giữ nếp sống thanh bạch, cần kiệm và gần gũi với thiên nhiên.</div>
+        </div>
 
+        <!-- Phần 4 -->
+        <h2>4. Tự học suốt đời: Tinh thần của người làm công nghệ</h2>
         <p>
-          Từ những trăn trở và bài học thực tiễn, tác giả <strong>Bùi Huỳnh Tây</strong> đề xuất mô hình giải pháp hành động và sản phẩm truyền thông mang tên: <strong>"MÔ HÌNH 3 TỰ - 3 TIÊN PHONG"</strong> – một khung định hướng rèn luyện toàn diện, gắn chặt việc học tập tư tưởng Hồ Chí Minh với đặc thù của sinh viên khối ngành Công nghệ Thông tin tại Đại học Quốc gia TP.HCM.
+          Chủ tịch Hồ Chí Minh là tấm gương sáng ngời về tinh thần tự học. Bác tự học ngoại ngữ và kiến thức thời đại khi bôn ba khắp năm châu bằng lao động thực tế. Bác từng dặn dò:
         </p>
 
-        <!-- KHUNG SƠ ĐỒ MÔ HÌNH (SVG DIAGRAM & DETAILS) -->
-        <div class="model-showcase-box">
-          <div class="model-showcase-header">
-            <h4>SƠ ĐỒ MÔ HÌNH HÀNH ĐỘNG "3 TỰ - 3 TIÊN PHONG"</h4>
-            <p style="color: #94a3b8; font-size: 0.9rem;">Khung giải pháp rèn luyện tư tưởng, đạo đức, phong cách Hồ Chí Minh - Tác giả: Bùi Huỳnh Tây</p>
-          </div>
+        <div class="post-quote">
+          “Học hỏi là một việc phải tiếp tục suốt đời. Không ai có thể tự cho mình đã biết đủ rồi.”
+          <div class="post-quote-author">— Lời dạy của Bác tại lớp bồi dưỡng cán bộ, 1954</div>
+        </div>
 
-          <div class="model-svg-wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="100%" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 16px; font-family: 'Roboto', 'Segoe UI', sans-serif;">
-  <defs>
-    <linearGradient id="gradRed" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ef4444" />
-      <stop offset="100%" stop-color="#b91c1c" />
-    </linearGradient>
-    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#0284c7" />
-    </linearGradient>
-    <linearGradient id="gradGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24" />
-      <stop offset="100%" stop-color="#d97706" />
-    </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-  </defs>
+        <p>
+          Ngành công nghệ thay đổi từng ngày, các công cụ và thuật toán mới liên tục ra đời. Nếu không tự học, người làm công nghệ sẽ rất nhanh bị thụt lùi. Học tập tinh thần của Bác, mỗi sinh viên cần chủ động nghiên cứu tài liệu gốc, rèn luyện tư duy độc lập và không phụ thuộc máy móc vào AI.
+        </p>
 
-  <!-- Title & Banner -->
-  <rect x="30" y="20" width="840" height="70" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" />
-  <text x="450" y="48" text-anchor="middle" fill="#fbbf24" font-size="20" font-weight="700" letter-spacing="1">MÔ HÌNH HÀNH ĐỘNG "3 TỰ - 3 TIÊN PHONG"</text>
-  <text x="450" y="72" text-anchor="middle" fill="#94a3b8" font-size="13">Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh - Sinh viên UIT ĐHQG-HCM</text>
+        <!-- Phần 5 -->
+        <h2>5. Phụng sự cộng đồng: "Học để làm việc, giúp dân, giúp nước"</h2>
+        <p>
+          Trong một lần Bác đến thăm lớp Bình dân học vụ sau Cách mạng Tháng Tám, khi một học viên trả lời <em>"Thưa Bác, học để biết chữ ạ"</em>, Bác mỉm cười nói:
+        </p>
 
-  <!-- Center Hub: Tư tưởng Hồ Chí Minh -->
-  <circle cx="450" cy="285" r="70" fill="url(#gradRed)" filter="url(#glow)" stroke="#fef08a" stroke-width="3" />
-  <text x="450" y="268" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">TƯ TƯỞNG</text>
-  <text x="450" y="288" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">HỒ CHÍ MINH</text>
-  <text x="450" y="308" text-anchor="middle" fill="#fef08a" font-size="11">Kim chỉ nam hành động</text>
+        <div class="post-quote">
+          “Học để biết chữ là đúng, nhưng cái quan trọng hơn là học để làm việc, để giúp dân, giúp nước, chứ không phải học để làm quan.”
+          <div class="post-quote-author">— Trích Tạp chí Giáo dục, số tháng 1/2005</div>
+        </div>
 
-  <!-- Left Column: 3 TỰ (Nội lực bên trong) -->
-  <g transform="translate(50, 115)">
-    <rect width="280" height="45" rx="8" fill="url(#gradGold)" />
-    <text x="140" y="28" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">TRỤ CỘT "3 TỰ" (RÈN MÌNH)</text>
+        <p>
+          Câu nói ấy nhắc nhở chúng mình rằng tấm bằng đại học hay chuyên môn giỏi chỉ thực sự có ý nghĩa trọn vẹn khi nó mang lại giá trị cho cộng đồng. Sinh viên công nghệ có thể phụng sự bằng những việc thiết thực: hướng dẫn bạn học cùng tiến, hỗ trợ số hóa tài liệu, hoặc tạo ra những phần mềm nhỏ giúp ích cho xã hội.
+        </p>
 
-    <!-- Card 1: Tự học -->
-    <rect y="60" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#fbbf24" stroke-width="1.5" />
-    <circle cx="28" cy="102" r="16" fill="#d97706" />
-    <text x="28" y="107" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">1</text>
-    <text x="55" y="92" fill="#fde68a" font-size="14" font-weight="bold">TỰ HỌC SUỐT ĐỜI</text>
-    <text x="55" y="112" fill="#cbd5e1" font-size="11">Học tập liên tục, nắm vững công nghệ lõi,</text>
-    <text x="55" y="128" fill="#cbd5e1" font-size="11">không ỷ lại, nghiên cứu độc lập.</text>
+        <div class="post-image">
+          <img src="images/bacho_thanhnien.png" alt="Bác Hồ với học sinh thiếu nhi">
+          <div class="post-image-caption">Bác Hồ trò chuyện thân mật cùng các cháu học sinh (Hà Nội, 1956). Bác luôn đặt trọn niềm tin vào thế hệ trẻ. (Ảnh tư liệu VNA)</div>
+        </div>
 
-    <!-- Card 2: Tự rèn -->
-    <rect y="160" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#fbbf24" stroke-width="1.5" />
-    <circle cx="28" cy="202" r="16" fill="#d97706" />
-    <text x="28" y="207" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">2</text>
-    <text x="55" y="192" fill="#fde68a" font-size="14" font-weight="bold">TỰ RÈN KỶ LUẬT</text>
-    <text x="55" y="212" fill="#cbd5e1" font-size="11">Đúng giờ, sống giản dị, giữ chữ tín,</text>
-    <text x="55" y="228" fill="#cbd5e1" font-size="11">trách nhiệm cao với từng dòng code.</text>
+        <!-- Phần 6: Mô hình giải pháp -->
+        <h2 id="mo-hinh">6. Mô hình giải pháp: "3 Tự – 3 Tiên phong" cho sinh viên UIT</h2>
+        <p>
+          Từ những trải nghiệm của bản thân tại Trường Đại học Công nghệ Thông tin (ĐHQG-HCM), mình xin chia sẻ ý tưởng về mô hình hành động đơn giản, gần gũi mang tên <strong>"3 Tự – 3 Tiên phong"</strong>:
+        </p>
 
-    <!-- Card 3: Tự soi -->
-    <rect y="260" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#fbbf24" stroke-width="1.5" />
-    <circle cx="28" cy="302" r="16" fill="#d97706" />
-    <text x="28" y="307" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">3</text>
-    <text x="55" y="292" fill="#fde68a" font-size="14" font-weight="bold">TỰ SOI &amp; TỰ SỬA</text>
-    <text x="55" y="312" fill="#cbd5e1" font-size="11">Nhìn nhận thiếu sót, không kiêu ngạo,</text>
-    <text x="55" y="328" fill="#cbd5e1" font-size="11">lắng nghe góp ý, hoàn thiện mỗi ngày.</text>
-  </g>
+        <div class="solution-box">
+          <h3 style="text-align: center; margin-bottom: 6px;">MÔ HÌNH HÀNH ĐỘNG "3 TỰ – 3 TIÊN PHONG"</h3>
+          <p style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh</p>
 
-  <!-- Right Column: 3 TIÊN PHONG (Hành động cống hiến) -->
-  <g transform="translate(570, 115)">
-    <rect width="280" height="45" rx="8" fill="url(#gradBlue)" />
-    <text x="140" y="28" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">"3 TIÊN PHONG" (PHỤNG SỰ)</text>
-
-    <!-- Card 1: Tiên phong số -->
-    <rect y="60" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#38bdf8" stroke-width="1.5" />
-    <circle cx="28" cy="102" r="16" fill="#0284c7" />
-    <text x="28" y="107" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">I</text>
-    <text x="55" y="92" fill="#bae6fd" font-size="14" font-weight="bold">TIÊN PHONG CHUYỂN ĐỔI SỐ</text>
-    <text x="55" y="112" fill="#cbd5e1" font-size="11">Đưa công nghệ về buôn làng, hỗ trợ số hoá,</text>
-    <text x="55" y="128" fill="#cbd5e1" font-size="11">phổ cập kỹ năng số cho người dân.</text>
-
-    <!-- Card 2: Tiên phong đổi mới -->
-    <rect y="160" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#38bdf8" stroke-width="1.5" />
-    <circle cx="28" cy="202" r="16" fill="#0284c7" />
-    <text x="28" y="207" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">II</text>
-    <text x="55" y="192" fill="#bae6fd" font-size="14" font-weight="bold">TIÊN PHONG ĐỔI MỚI SÁNG TẠO</text>
-    <text x="55" y="212" fill="#cbd5e1" font-size="11">Sáng chế sản phẩm IT phục vụ xã hội,</text>
-    <text x="55" y="228" fill="#cbd5e1" font-size="11">giải quyết bài toán thực tế của đất nước.</text>
-
-    <!-- Card 3: Tiên phong văn hóa mạng -->
-    <rect y="260" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#38bdf8" stroke-width="1.5" />
-    <circle cx="28" cy="302" r="16" fill="#0284c7" />
-    <text x="28" y="307" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">III</text>
-    <text x="55" y="292" fill="#bae6fd" font-size="14" font-weight="bold">TIÊN PHONG VĂN HÓA MẠNG</text>
-    <text x="55" y="312" fill="#cbd5e1" font-size="11">Lan toả điều tích cực, đạo đức số,</text>
-    <text x="55" y="328" fill="#cbd5e1" font-size="11">bảo vệ an toàn thông tin &amp; lẽ phải.</text>
-  </g>
-
-  <!-- Connecting Lines -->
-  <path d="M330,215 C360,215 370,250 380,270" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4" fill="none" />
-  <path d="M330,315 C360,315 370,300 380,290" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4" fill="none" />
-  <path d="M520,270 C530,250 540,215 570,215" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" fill="none" />
-  <path d="M520,290 C530,300 540,315 570,315" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" fill="none" />
-
-  <!-- Bottom Outcome Bar -->
-  <rect x="120" y="475" width="660" height="35" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" />
-  <text x="450" y="498" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="500">MỤC TIÊU: XÂY DỰNG HÌNH MẪU THANH NIÊN UIT "TÂM TRONG - TRÍ SÁNG - HOÀI BÃO LỚN"</text>
-</svg>
-          </div>
-
-          <div class="model-grid">
-            <div class="model-card-item">
-              <h5><span>🎯</span> TRỤ CỘT "3 TỰ" (RÈN MÌNH - NỘI LỰC)</h5>
-              <p><strong>1. Tự học suốt đời:</strong> Chủ động cập nhật tri thức mới, nghiên cứu tài liệu quốc tế, không phụ thuộc vào mã nguồn có sẵn, rèn luyện tư duy phản biện khoa học.</p>
-              <p><strong>2. Tự rèn kỷ luật:</strong> Thực hiện văn hóa đúng giờ (on-time), giữ gìn lối sống giản dị, tiết kiệm, liêm chính trong học thuật (nói không với gian lận đồ án).</p>
-              <p><strong>3. Tự soi &amp; Tự sửa:</strong> Định kỳ tự đánh giá điểm mạnh - điểm yếu của bản thân mỗi tuần, lắng nghe đóng góp của thầy cô và bạn bè để hoàn thiện đạo đức lối sống.</p>
+          <div class="solution-grid">
+            <div class="solution-col">
+              <h4>🎯 TRỤ CỘT "3 TỰ" (RÈN MÌNH)</h4>
+              <ul>
+                <li><strong>Tự học suốt đời:</strong> Chủ động tìm tòi tài liệu, nâng cao trình độ chuyên môn, làm chủ công nghệ mới.</li>
+                <li><strong>Tự rèn kỷ luật:</strong> Đi học đúng giờ, nộp bài đúng hẹn, trung thực trong thi cử và nghiên cứu.</li>
+                <li><strong>Tự soi & tự sửa:</strong> Nhìn nhận khuyết điểm của bản thân mỗi tuần để ngày một hoàn thiện hơn.</li>
+              </ul>
             </div>
 
-            <div class="model-card-item">
-              <h5><span>🚀</span> TRỤ CỘT "3 TIÊN PHONG" (PHỤNG SỰ - NGOẠI LỰC)</h5>
-              <p><strong>I. Tiên phong chuyển đổi số:</strong> Tham gia các đội hình chuyên "Mùa hè xanh", "Xuân tình nguyện" phổ cập kỹ năng số, hỗ trợ người dân vùng xa sử dụng dịch vụ công trực tuyến.</p>
-              <p><strong>II. Tiên phong sáng tạo vì cộng đồng:</strong> Lập trình các sản phẩm mã nguồn mở phi lợi nhuận (Open Source for Social Good), ứng dụng AI giải quyết bài toán giao thông, y tế, giáo dục.</p>
-              <p><strong>III. Tiên phong văn hóa mạng:</strong> Giữ gìn chuẩn mực ứng xử văn minh trên không gian mạng, tích cực lan tỏa thông tin tích cực, bảo vệ lẽ phải và nền tảng tư tưởng của Đảng.</p>
+            <div class="solution-col">
+              <h4>🚀 TRỤ CỘT "3 TIÊN PHONG" (PHỤNG SỰ)</h4>
+              <ul>
+                <li><strong>Tiên phong số:</strong> Đem kiến thức IT hỗ trợ cộng đồng, phổ cập kỹ năng số cho người dân.</li>
+                <li><strong>Tiên phong sáng tạo:</strong> Tham gia phát triển các sản phẩm công nghệ phục vụ cộng đồng.</li>
+                <li><strong>Tiên phong văn hóa mạng:</strong> Chia sẻ thông tin tích cực, xây dựng môi trường mạng văn minh.</li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <h3 id="san-pham-truyen-thong">Sản phẩm truyền thông &amp; Ứng dụng số hóa đồng hành:</h3>
-        
-        <figure class="post-figure">
-          <img src="images/sinhvien_congnghe.jpg" alt="Sinh viên UIT thuyết trình ý tưởng dự án công nghệ phụng sự cộng đồng">
-          <figcaption>
-            <strong>Hình 6:</strong> Tuổi trẻ UIT tự tin thuyết trình các sản phẩm công nghệ và giải pháp số hoá phụng sự cộng đồng tại các diễn đàn khoa học sinh viên.
-          </figcaption>
-        </figure>
-
-        <div class="callout-box">
-          <div class="callout-box-header">
-            <span>💡</span> CÁC SẢN PHẨM TRUYỀN THÔNG SỐ ĐỀ XUẤT TRIỂN KHAI THỰC TẾ
-          </div>
-          <ul>
-            <li>
-              <strong>1. Web App "Nhật ký làm theo Bác 4.0":</strong> 
-              Một ứng dụng web nhỏ gọn do chính sinh viên UIT phát triển, cho phép sinh viên ghi nhận nhật ký rèn luyện "Mỗi ngày một việc tốt theo lời Bác", tích hợp thuật toán AI gợi ý các trích dẫn và câu chuyện lịch sử của Bác phù hợp với từng tâm trạng và thử thách học tập của sinh viên.
-            </li>
-            <li>
-              <strong>2. Chiến dịch "Code for Community - Lập trình phụng sự":</strong> 
-              Mạng lưới sinh viên công nghệ nhận bảo trợ kỹ thuật miễn phí cho các trung tâm bảo trợ xã hội, mái ấm nhà mở, xây dựng website quảng bá sản phẩm OCOP cho các địa phương khó khăn.
-            </li>
-            <li>
-              <strong>3. Không gian Văn hóa Hồ Chí Minh thực tế ảo (VR/AR UIT):</strong> 
-              Ứng dụng công nghệ 3D số hóa các hiện vật, hình ảnh về Bác Hồ và phòng truyền thống Đoàn - Hội, giúp sinh viên có thể tham quan, trải nghiệm không gian văn hóa Bác Hồ ngay trên điện thoại thông minh.
-            </li>
-          </ul>
+        <div class="post-image">
+          <img src="images/sinhvien_congnghe.jpg" alt="Sinh viên UIT học tập và phát triển dự án">
+          <div class="post-image-caption">Sinh viên UIT cùng nhau làm việc nhóm, trao đổi học thuật và phát triển các giải pháp công nghệ.</div>
         </div>
 
-        <!-- MỤC 4: LỜI KẾT -->
-        <h2 id="thong-diep-ket-luan" class="post-section-heading">
-          <span>IV.</span> THÔNG ĐIỆP KẾT LUẬN TỪ TÁC GIẢ BÙI HUỲNH TÂY
-        </h2>
-
+        <!-- Kết luận -->
+        <h2>7. Lời kết</h2>
         <p>
-          Học tập và làm theo Bác Hồ không bắt đầu từ những điều to lớn, vĩ đại, mà bắt đầu từ chính ngày hôm nay, từ chiếc bàn học ngăn nắp, từ một buổi lên lớp đúng giờ, từ một dòng code được viết bằng cả lương tâm nghề nghiệp và sự tôn trọng người dùng. Khi mỗi sinh viên biết nuôi dưỡng một lý tưởng sống đẹp, biết đặt lợi ích của tập thể lên trên sự ích kỷ cá nhân, chúng ta đang từng bước tiếp nối di nguyện của Bác: đưa non sông Việt Nam bước tới đài vinh quang để sánh vai cùng các cường quốc năm châu.
+          Học theo Bác không phải điều gì xa vời. Mỗi sinh viên chúng mình đều có thể bắt đầu ngay từ hôm nay: bằng một buổi học đúng giờ, một lời hứa giữ trọn, một tinh thần tự học kiên trì và một tấm lòng muốn đem công nghệ phục vụ mọi người.
         </p>
 
-        <p>
-          Là sinh viên của Trường Đại học Công nghệ Thông tin – ĐHQG-HCM, chúng mình tin tưởng sâu sắc rằng: <strong>Công nghệ sẽ chỉ thực sự có sức mạnh trọn vẹn khi nó được dẫn dắt bởi một trái tim ấm nóng tình người và một đạo đức trong sáng theo gương Bác Hồ kính yêu.</strong>
-        </p>
-
-        <!-- Chữ ký tác giả -->
-        <div class="author-signature-block">
-          <div class="signature-box">
-            <div class="signature-date">Thành phố Hồ Chí Minh, tháng 11 năm 2026</div>
-            <div class="signature-name">Bùi Huỳnh Tây</div>
-            <div class="signature-org">Trường Đại học Công nghệ Thông tin – ĐHQG-HCM</div>
-          </div>
+        <div class="post-author-sign">
+          <div class="sign-name">Bùi Huỳnh Tây</div>
+          <div class="sign-role">Sinh viên Trường Đại học Công nghệ Thông tin – ĐHQG-HCM</div>
         </div>
 
-      </div><!-- /post-body -->
+      </div><!-- /post-content -->
 
-      <!-- THANH TƯƠNG TÁC (REACTIONS, SHARE) -->
-      <div class="post-actions-bar">
-        <div class="reaction-buttons">
-          <button id="btn-clap" class="btn-reaction" title="Vỗ tay cổ vũ">
-            👏 Vỗ tay (<span class="count">128</span>)
-          </button>
-          <button id="btn-like" class="btn-reaction" title="Yêu thích bài viết">
-            ❤️ Thích (<span class="count">342</span>)
-          </button>
-          <button id="btn-star" class="btn-reaction" title="Đánh giá mô hình">
-            ⭐ 5 Sao (<span class="count">89</span>)
-          </button>
-        </div>
-
-        <div class="share-buttons">
-          <span class="share-label">Chia sẻ:</span>
-          <button id="btn-share-fb" class="btn-share facebook" title="Chia sẻ lên Facebook">f</button>
-          <button id="btn-share-zalo" class="btn-share zalo" title="Chia sẻ qua Zalo">Z</button>
-          <button id="btn-copy-link" class="btn-share copy" title="Sao chép link bài viết">🔗</button>
-        </div>
+      <!-- Nút tương tác giản dị -->
+      <div class="post-footer-actions">
+        <button id="btn-like-post" class="btn-like">❤️ Thích bài viết (<span id="like-count">42</span>)</button>
+        <button id="btn-copy-url" class="btn-copy">🔗 Sao chép liên kết</button>
       </div>
 
-      <!-- HỘP BÌNH LUẬN (COMMENTS) -->
-      <section id="comments-anchor" class="comments-section">
-        <h3 class="comments-title">
-          <span>💬</span> Thảo luận &amp; Bình luận đóng góp (<span id="comment-count">4</span>)
-        </h3>
+      <!-- Khu vực bình luận -->
+      <section class="comments-wrap">
+        <div class="comments-title">Bình luận & Chia sẻ</div>
 
-        <!-- Form gửi bình luận -->
-        <div class="comment-form-card">
-          <form id="comment-form">
-            <div class="form-row">
-              <div class="form-group">
-                <input type="text" id="comment-name" class="form-control" placeholder="Họ và tên của bạn *" required>
-              </div>
-              <div class="form-group">
-                <input type="text" id="comment-role" class="form-control" placeholder="Đơn vị / Lớp (VD: Khoa KTPM - UIT)">
-              </div>
-            </div>
-            <div class="form-group">
-              <textarea id="comment-message" class="form-control" placeholder="Chia sẻ suy nghĩ, cảm nhận hoặc ý kiến đóng góp cho mô hình giải pháp... *" required></textarea>
-            </div>
-            <button type="submit" class="btn-submit-comment">Gửi bình luận ngay 🚀</button>
-          </form>
-        </div>
+        <form id="simple-comment-form" class="comment-input-box">
+          <textarea id="c-text" placeholder="Để lại suy nghĩ hoặc góp ý của bạn..." required></textarea>
+          <div class="comment-input-row">
+            <input type="text" id="c-name" placeholder="Tên của bạn *" required>
+            <button type="submit" class="btn-submit-c">Gửi</button>
+          </div>
+        </form>
 
-        <!-- Danh sách bình luận -->
-        <div id="comment-list" class="comment-list">
-          
-          <div class="comment-item">
-            <div class="comment-author-row">
-              <div class="comment-author-name">
-                <span>Thầy Nguyễn Văn An</span>
-                <span class="comment-role-tag">Giảng viên Khoa KTPM - UIT</span>
-              </div>
-              <span class="comment-date">Hôm qua lúc 14:20</span>
+        <div id="simple-comment-list">
+          <div class="comment-single">
+            <div class="comment-header">
+              <strong>Nguyễn Văn Hùng</strong> • <span>12/11/2026</span>
             </div>
-            <div class="comment-text">
-              Bài viết rất sâu sắc và chạm đúng trăn trở của các thầy cô hiện nay. Mô hình "3 Tự - 3 Tiên phong" của em Bùi Huỳnh Tây rất cụ thể, gắn liền với đạo đức công nghệ và tinh thần tự học. Rất mong Đoàn trường sẽ sớm hỗ trợ triển khai thành phong trào rộng khắp cho sinh viên toàn trường!
+            <div class="comment-body">
+              Bài viết mộc mạc và chân thành lắm Tây ơi! Mô hình "3 Tự - 3 Tiên phong" rất dễ nhớ và thiết thực với sinh viên IT tụi mình.
             </div>
           </div>
 
-          <div class="comment-item">
-            <div class="comment-author-row">
-              <div class="comment-author-name">
-                <span>Lê Minh Khang</span>
-                <span class="comment-role-tag">Sinh viên K18 Khoa KHMT</span>
-              </div>
-              <span class="comment-date">12/11/2026</span>
+          <div class="comment-single">
+            <div class="comment-header">
+              <strong>Trần Mai Anh</strong> • <span>11/11/2026</span>
             </div>
-            <div class="comment-text">
-              Đọc xong bài viết này của bạn Tây thấy thấm thía quá! Bình thường mình hay thức khuya rồi trễ giờ học hoặc code vội cho xong deadline. Bài học đúng giờ và tự học của Bác thực sự là hồi chuông đánh thức bản thân. Cảm ơn bạn vì bài viết rất truyền cảm hứng!
+            <div class="comment-body">
+              Thích cách bạn liên hệ bài học đúng giờ của Bác vào việc làm đồ án nhóm và giữ kỷ luật lập trình. Cố gắng phát huy nhé!
             </div>
           </div>
-
-          <div class="comment-item">
-            <div class="comment-author-row">
-              <div class="comment-author-name">
-                <span>Trần Thị Mỹ Duyên</span>
-                <span class="comment-role-tag">Đoàn viên ĐHQG-HCM</span>
-              </div>
-              <span class="comment-date">11/11/2026</span>
-            </div>
-            <div class="comment-text">
-              Ý tưởng Web App "Nhật ký làm theo Bác 4.0" và chiến dịch "Code for Community" rất thực tế. Sinh viên IT có lợi thế lớn về công nghệ, mang công nghệ đi giúp đồng bào vùng khó khăn chính là cách làm theo Bác thiết thực nhất. 10 điểm cho bạn Tây!
-            </div>
-          </div>
-
-          <div class="comment-item">
-            <div class="comment-author-row">
-              <div class="comment-author-name">
-                <span>Phạm Hoàng Long</span>
-                <span class="comment-role-tag">Sinh viên UIT</span>
-              </div>
-              <span class="comment-date">10/11/2026</span>
-            </div>
-            <div class="comment-text">
-              Giao diện blog trình bày rất đẹp, hình ảnh tư liệu chuẩn chỉ, lập luận khoa học và thuyết phục. Chúc tác giả Bùi Huỳnh Tây đạt giải cao trong cuộc thi truyền thông lần này nhé!
-            </div>
-          </div>
-
         </div>
       </section>
 
-    </article><!-- /main-content -->
+    </main>
 
-    <!-- CỘT SIDEBAR BÊN PHẢI (WIDGETS THEME CONTEMPO BLOGGER) -->
+    <!-- Cột bên phải (Sidebar tác giả) -->
     <aside class="sidebar">
 
-      <!-- Widget 1: Thông tin Tác giả -->
-      <div id="author-section" class="sidebar-widget author-profile-card">
-        <h4 class="widget-title"><span>👤</span> TÁC GIẢ BÀI VIẾT</h4>
-        <div class="profile-avatar-wrapper">
-          <img src="images/author_avatar.jpg" alt="Chân dung Bùi Huỳnh Tây" class="profile-avatar">
-          <span class="profile-verified-badge" title="Tác giả chính thức">✓</span>
-        </div>
-        <h3 class="profile-name">BÙI HUỲNH TÂY</h3>
-        <div class="profile-role">Sinh viên Trường ĐH Công nghệ Thông tin (UIT)</div>
-        <p class="profile-bio">
-          Đam mê công nghệ phần mềm, khát vọng mang năng lực IT phụng sự cộng đồng. Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh từ những dòng code chỉn chu và hành động thiết thực mỗi ngày.
-        </p>
-        <div class="profile-badges">
-          <span class="profile-badge-item">🎓 Sinh viên UIT ĐHQG-HCM</span>
-          <span class="profile-badge-item">🌟 Thanh niên tiên tiến</span>
-          <span class="profile-badge-item">💻 Tech for Good</span>
+      <!-- Thông tin tác giả với ảnh thật -->
+      <div id="tac-gia" class="author-card">
+        <img src="images/author_avatar.jpg" alt="Bùi Huỳnh Tây - UIT" class="author-photo">
+        <div class="author-name">Bùi Huỳnh Tây</div>
+        <div class="author-uni">Sinh viên UIT - ĐHQG-HCM</div>
+        <div class="author-desc">
+          Chào bạn, mình là Tây. Đây là blog cá nhân nơi mình chia sẻ những suy nghĩ về việc học tập, công nghệ và rèn luyện theo gương Bác từ những việc giản dị thường ngày.
         </div>
       </div>
 
-      <!-- Widget 2: Mục lục bài viết (Table of Contents) -->
-      <div class="sidebar-widget">
-        <h4 class="widget-title"><span>📑</span> MỤC LỤC BÀI VIẾT</h4>
-        <ul class="toc-list">
-          <li><a href="#dat-van-de" class="toc-link">I. Đặt vấn đề: Chuẩn mực sống đẹp</a></li>
-          <li><a href="#bai-hoc-gian-di" class="toc-link">II. Những bài học giản dị từ Bác</a></li>
-          <li><a href="#ky-luat-dung-hen" class="toc-link" style="padding-left: 20px;">1. Kỷ luật – Đúng hẹn</a></li>
-          <li><a href="#gian-di-tiet-kiem" class="toc-link" style="padding-left: 20px;">2. Giản dị – Tiết kiệm</a></li>
-          <li><a href="#tu-hoc-suot-doi" class="toc-link" style="padding-left: 20px;">3. Tự học suốt đời</a></li>
-          <li><a href="#phung-su-cong-dong" class="toc-link" style="padding-left: 20px;">4. Phụng sự cộng đồng</a></li>
-          <li><a href="#mo-hinh-3tu-3tienphong" class="toc-link">III. Mô hình 3 Tự - 3 Tiên phong</a></li>
-          <li><a href="#san-pham-truyen-thong" class="toc-link" style="padding-left: 20px;">Sản phẩm truyền thông số</a></li>
-          <li><a href="#thong-diep-ket-luan" class="toc-link">IV. Thông điệp kết luận</a></li>
-          <li><a href="#comments-anchor" class="toc-link">Bình luận &amp; Thảo luận</a></li>
+      <!-- Mục lục nhanh -->
+      <div class="sidebar-box">
+        <div class="sidebar-title">Mục lục bài viết</div>
+        <ul class="toc-nav">
+          <li><a href="#bai-viet">1. Đặt vấn đề</a></li>
+          <li><a href="#bai-viet">2. Kỷ luật – Đúng hẹn</a></li>
+          <li><a href="#bai-viet">3. Giản dị – Tiết kiệm</a></li>
+          <li><a href="#bai-viet">4. Tự học suốt đời</a></li>
+          <li><a href="#bai-viet">5. Phụng sự cộng đồng</a></li>
+          <li><a href="#mo-hinh">6. Mô hình 3 Tự – 3 Tiên phong</a></li>
         </ul>
-      </div>
-
-      <!-- Widget 3: Lời Bác dạy hôm nay (Interactive Quote) -->
-      <div class="sidebar-widget">
-        <h4 class="widget-title"><span>✨</span> LỜI BÁC DẠY HÔM NAY</h4>
-        <div class="quote-widget-card">
-          <p id="daily-quote-text" class="quote-widget-text">“Học để làm việc, làm người, làm cán bộ. Học để phụng sự Đoàn thể, giai cấp và nhân dân, Tổ quốc và nhân loại.”</p>
-          <div class="quote-widget-footer">
-            <span id="daily-quote-source" class="quote-author">— Chủ tịch Hồ Chí Minh (1949)</span>
-            <button id="btn-refresh-quote" class="btn-refresh-quote" title="Đổi câu nói khác">🔄 Đổi câu</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Widget 4: Bài viết phổ biến (Popular Posts) -->
-      <div class="sidebar-widget">
-        <h4 class="widget-title"><span>🔥</span> BÀI ĐĂNG PHỔ BIẾN</h4>
-        <div class="popular-posts-list">
-          
-          <a href="#" class="popular-post-item">
-            <img src="images/portrait_bacho.jpg" alt="Chủ tịch Hồ Chí Minh" class="popular-post-thumb">
-            <div class="popular-post-info">
-              <h5>Bác Hồ và chuẩn mực sống đẹp: Từ bài học giản dị đến trách nhiệm sinh viên hôm nay</h5>
-              <span class="popular-post-date">1,890 lượt đọc</span>
-            </div>
-          </a>
-
-          <a href="#" class="popular-post-item">
-            <img src="images/sinhvien_laptrinh.jpg" alt="Sinh viên lập trình" class="popular-post-thumb">
-            <div class="popular-post-info">
-              <h5>Đạo đức người làm công nghệ trong kỷ nguyên AI: Lời Bác soi đường</h5>
-              <span class="popular-post-date">1,420 lượt đọc</span>
-            </div>
-          </a>
-
-          <a href="#" class="popular-post-item">
-            <img src="images/bacho_chinhphu.png" alt="Hội đồng chính phủ" class="popular-post-thumb">
-            <div class="popular-post-info">
-              <h5>Bài học về đúng giờ và kỷ luật: Giá trị trường tồn qua mọi thế hệ</h5>
-              <span class="popular-post-date">980 lượt đọc</span>
-            </div>
-          </a>
-
-        </div>
-      </div>
-
-      <!-- Widget 5: Nhãn chủ đề (Tags Cloud) -->
-      <div class="sidebar-widget">
-        <h4 class="widget-title"><span>🏷️</span> NHÃN CHỦ ĐỀ</h4>
-        <div class="tags-cloud">
-          <a href="#" class="tag-item">#TuTuongHoChiMinh</a>
-          <a href="#" class="tag-item">#SinhVienUIT</a>
-          <a href="#" class="tag-item">#BuiHuynhTay</a>
-          <a href="#" class="tag-item">#MoHinh3Tu3TienPhong</a>
-          <a href="#" class="tag-item">#TuHocSuotDoi</a>
-          <a href="#" class="tag-item">#KyLuatDungHen</a>
-          <a href="#" class="tag-item">#DaoDucSo</a>
-          <a href="#" class="tag-item">#CodeForCommunity</a>
-          <a href="#" class="tag-item">#DHQG_HCM</a>
-          <a href="#" class="tag-item">#SongDep</a>
-        </div>
       </div>
 
     </aside>
 
-  </main>
+  </div><!-- /page-layout -->
 
-  <!-- FOOTER -->
-  <footer class="main-footer">
-    <div class="footer-inner">
-      <div class="footer-col">
-        <h4>KHÔNG GIAN VĂN HÓA HỒ CHÍ MINH UIT</h4>
-        <p>
-          Bài viết, sản phẩm truyền thông &amp; ý tưởng mô hình giải pháp học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh.
-        </p>
-        <p>
-          <strong>Tác giả:</strong> Bùi Huỳnh Tây – Trường Đại học Công nghệ Thông tin, Đại học Quốc gia TP.HCM.
-        </p>
-        <p style="font-size: 0.8rem; color: #64748b;">
-          Di sản của Chủ tịch Hồ Chí Minh là nguồn cảm hứng vô tận, kim chỉ nam soi sáng cho thế hệ thanh niên công nghệ Việt Nam vững bước hội nhập và phụng sự nhân dân.
-        </p>
-      </div>
-
-      <div class="footer-col">
-        <h4>LIÊN KẾT NHANH</h4>
-        <ul class="footer-links">
-          <li><a href="https://www.uit.edu.vn" target="_blank" rel="noopener">Trường ĐH Công nghệ Thông tin</a></li>
-          <li><a href="https://vnuhcm.edu.vn" target="_blank" rel="noopener">Đại học Quốc gia TP.HCM</a></li>
-          <li><a href="https://doanthanhnien.vn" target="_blank" rel="noopener">Trung ương Đoàn TNCS Hồ Chí Minh</a></li>
-          <li><a href="https://hcmcpv.org.vn" target="_blank" rel="noopener">Trang tin Điện tử Đảng bộ TP.HCM</a></li>
-          <li><a href="http://baotanghochiminh.vn" target="_blank" rel="noopener">Bảo tàng Hồ Chí Minh</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>THÔNG TIN &amp; BẢN QUYỀN</h4>
-        <p>📍 Khu phố 6, P. Linh Trung, TP. Thủ Đức, TP. Hồ Chí Minh</p>
-        <p>✉️ Liên hệ: taybh@uit.edu.vn</p>
-        <p>🏷️ Bản quyền nội dung © 2026 Bùi Huỳnh Tây.</p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>Thực hiện với tất cả lòng kính yêu và lòng biết ơn sâu sắc đối với Chủ tịch Hồ Chí Minh vĩ đại.</p>
-    </div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    Blog cá nhân của Bùi Huỳnh Tây © 2026 • Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
   </footer>
 
-  <!-- Lightbox Modal phóng to ảnh -->
-  <div id="lightbox-modal" class="lightbox-modal">
-    <button id="lightbox-close" class="lightbox-close" title="Đóng">&times;</button>
-    <img id="lightbox-img" class="lightbox-content" src="" alt="Hình ảnh phóng to">
-    <div id="lightbox-caption" class="lightbox-caption"></div>
-  </div>
+  <div id="toast-msg" class="toast-msg"></div>
 
-  <!-- JavaScript xử lý tương tác -->
   <script src="script.js"></script>
 </body>
 </html>
