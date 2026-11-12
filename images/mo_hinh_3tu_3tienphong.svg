@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="100%" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 16px; font-family: 'Roboto', 'Segoe UI', sans-serif;">
+  <defs>
+    <linearGradient id="gradRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="gradGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Title & Banner -->
+  <rect x="30" y="20" width="840" height="70" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" />
+  <text x="450" y="48" text-anchor="middle" fill="#fbbf24" font-size="20" font-weight="700" letter-spacing="1">MÔ HÌNH HÀNH ĐỘNG "3 TỰ - 3 TIÊN PHONG"</text>
+  <text x="450" y="72" text-anchor="middle" fill="#94a3b8" font-size="13">Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh - Sinh viên UIT ĐHQG-HCM</text>
+
+  <!-- Center Hub: Tư tưởng Hồ Chí Minh -->
+  <circle cx="450" cy="285" r="70" fill="url(#gradRed)" filter="url(#glow)" stroke="#fef08a" stroke-width="3" />
+  <text x="450" y="268" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">TƯ TƯỞNG</text>
+  <text x="450" y="288" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">HỒ CHÍ MINH</text>
+  <text x="450" y="308" text-anchor="middle" fill="#fef08a" font-size="11">Kim chỉ nam hành động</text>
+
+  <!-- Left Column: 3 TỰ (Nội lực bên trong) -->
+  <g transform="translate(50, 115)">
+    <rect width="280" height="45" rx="8" fill="url(#gradGold)" />
+    <text x="140" y="28" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">TRỤ CỘT "3 TỰ" (RÈN MÌNH)</text>
+
+    <!-- Card 1: Tự học -->
+    <rect y="60" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#fbbf24" stroke-width="1.5" />
+    <circle cx="28" cy="102" r="16" fill="#d97706" />
+    <text x="28" y="107" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">1</text>
+    <text x="55" y="92" fill="#fde68a" font-size="14" font-weight="bold">TỰ HỌC SUỐT ĐỜI</text>
+    <text x="55" y="112" fill="#cbd5e1" font-size="11">Học tập liên tục, nắm vững công nghệ lõi,</text>
+    <text x="55" y="128" fill="#cbd5e1" font-size="11">không ỷ lại, nghiên cứu độc lập.</text>
+
+    <!-- Card 2: Tự rèn -->
+    <rect y="160" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#fbbf24" stroke-width="1.5" />
+    <circle cx="28" cy="202" r="16" fill="#d97706" />
+    <text x="28" y="207" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">2</text>
+    <text x="55" y="192" fill="#fde68a" font-size="14" font-weight="bold">TỰ RÈN KỶ LUẬT</text>
+    <text x="55" y="212" fill="#cbd5e1" font-size="11">Đúng giờ, sống giản dị, giữ chữ tín,</text>
+    <text x="55" y="228" fill="#cbd5e1" font-size="11">trách nhiệm cao với từng dòng code.</text>
+
+    <!-- Card 3: Tự soi -->
+    <rect y="260" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#fbbf24" stroke-width="1.5" />
+    <circle cx="28" cy="302" r="16" fill="#d97706" />
+    <text x="28" y="307" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">3</text>
+    <text x="55" y="292" fill="#fde68a" font-size="14" font-weight="bold">TỰ SOI &amp; TỰ SỬA</text>
+    <text x="55" y="312" fill="#cbd5e1" font-size="11">Nhìn nhận thiếu sót, không kiêu ngạo,</text>
+    <text x="55" y="328" fill="#cbd5e1" font-size="11">lắng nghe góp ý, hoàn thiện mỗi ngày.</text>
+  </g>
+
+  <!-- Right Column: 3 TIÊN PHONG (Hành động cống hiến) -->
+  <g transform="translate(570, 115)">
+    <rect width="280" height="45" rx="8" fill="url(#gradBlue)" />
+    <text x="140" y="28" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">"3 TIÊN PHONG" (PHỤNG SỰ)</text>
+
+    <!-- Card 1: Tiên phong số -->
+    <rect y="60" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="28" cy="102" r="16" fill="#0284c7" />
+    <text x="28" y="107" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">I</text>
+    <text x="55" y="92" fill="#bae6fd" font-size="14" font-weight="bold">TIÊN PHONG CHUYỂN ĐỔI SỐ</text>
+    <text x="55" y="112" fill="#cbd5e1" font-size="11">Đưa công nghệ về buôn làng, hỗ trợ số hoá,</text>
+    <text x="55" y="128" fill="#cbd5e1" font-size="11">phổ cập kỹ năng số cho người dân.</text>
+
+    <!-- Card 2: Tiên phong đổi mới -->
+    <rect y="160" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="28" cy="202" r="16" fill="#0284c7" />
+    <text x="28" y="207" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">II</text>
+    <text x="55" y="192" fill="#bae6fd" font-size="14" font-weight="bold">TIÊN PHONG ĐỔI MỚI SÁNG TẠO</text>
+    <text x="55" y="212" fill="#cbd5e1" font-size="11">Sáng chế sản phẩm IT phục vụ xã hội,</text>
+    <text x="55" y="228" fill="#cbd5e1" font-size="11">giải quyết bài toán thực tế của đất nước.</text>
+
+    <!-- Card 3: Tiên phong văn hóa mạng -->
+    <rect y="260" width="280" height="85" rx="10" fill="rgba(30, 41, 59, 0.9)" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="28" cy="302" r="16" fill="#0284c7" />
+    <text x="28" y="307" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">III</text>
+    <text x="55" y="292" fill="#bae6fd" font-size="14" font-weight="bold">TIÊN PHONG VĂN HÓA MẠNG</text>
+    <text x="55" y="312" fill="#cbd5e1" font-size="11">Lan toả điều tích cực, đạo đức số,</text>
+    <text x="55" y="328" fill="#cbd5e1" font-size="11">bảo vệ an toàn thông tin &amp; lẽ phải.</text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <path d="M330,215 C360,215 370,250 380,270" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4" fill="none" />
+  <path d="M330,315 C360,315 370,300 380,290" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4" fill="none" />
+  <path d="M520,270 C530,250 540,215 570,215" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" fill="none" />
+  <path d="M520,290 C530,300 540,315 570,315" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" fill="none" />
+
+  <!-- Bottom Outcome Bar -->
+  <rect x="120" y="475" width="660" height="35" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" />
+  <text x="450" y="498" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="500">MỤC TIÊU: XÂY DỰNG HÌNH MẪU THANH NIÊN UIT "TÂM TRONG - TRÍ SÁNG - HOÀI BÃO LỚN"</text>
+</svg>
