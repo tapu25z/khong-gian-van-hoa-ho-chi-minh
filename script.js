@@ -1,14 +1,14 @@
 /**
  * Blog cá nhân - Bùi Huỳnh Tây (UIT - ĐHQG-HCM)
- * JavaScript tối giản cho trải nghiệm đọc
+ * JavaScript tối giản, không lạm dụng icon
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Chế độ Sáng / Tối
+  // 1. Chế độ đọc Sáng / Tối
   const themeBtn = document.getElementById('theme-toggle');
   const savedTheme = localStorage.getItem('personal_blog_theme') || 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
-  updateThemeIcon(savedTheme);
+  updateThemeText(savedTheme);
 
   if (themeBtn) {
     themeBtn.addEventListener('click', () => {
@@ -16,18 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const next = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('personal_blog_theme', next);
-      updateThemeIcon(next);
-      showToast(next === 'dark' ? 'Đã bật chế độ tối' : 'Đã bật chế độ sáng');
+      updateThemeText(next);
+      showToast(next === 'dark' ? 'Đã chuyển sang giao diện tối' : 'Đã chuyển sang giao diện sáng');
     });
   }
 
-  function updateThemeIcon(theme) {
+  function updateThemeText(theme) {
     if (themeBtn) {
-      themeBtn.textContent = theme === 'dark' ? '☀️' : '🌙';
+      themeBtn.textContent = theme === 'dark' ? 'Giao diện sáng' : 'Giao diện tối';
     }
   }
 
-  // 2. Thanh tiến trình đọc
+  // 2. Thanh tiến trình đọc bài
   const progressBar = document.getElementById('reading-progress-bar');
   window.addEventListener('scroll', () => {
     const total = document.documentElement.scrollHeight - window.innerHeight;
@@ -47,23 +47,23 @@ document.addEventListener('DOMContentLoaded', () => {
       likes++;
       localStorage.setItem('buihuynhtay_blog_likes', likes);
       if (likeCountSpan) likeCountSpan.textContent = likes;
-      showToast('Cảm ơn bạn đã thích bài viết!');
+      showToast('Cảm ơn bạn đã thích bài viết.');
     });
   }
 
-  // 4. Sao chép link bài viết
+  // 4. Sao chép liên kết bài viết
   const copyBtn = document.getElementById('btn-copy-url');
   if (copyBtn) {
     copyBtn.addEventListener('click', () => {
       navigator.clipboard.writeText(window.location.href).then(() => {
-        showToast('Đã sao chép liên kết bài viết!');
+        showToast('Đã sao chép liên kết bài viết.');
       }).catch(() => {
         showToast(window.location.href);
       });
     });
   }
 
-  // 5. Bình luận giản dị
+  // 5. Bình luận trao đổi
   const commentForm = document.getElementById('simple-comment-form');
   const commentList = document.getElementById('simple-comment-list');
   const savedComments = JSON.parse(localStorage.getItem('buihuynhtay_comments') || '[]');
@@ -92,19 +92,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       renderComment(newC, true);
       textInput.value = '';
-      showToast('Đã gửi bình luận của bạn!');
+      showToast('Đã gửi bình luận của bạn.');
     });
   }
 
   function renderComment(c, isNew = false) {
     if (!commentList) return;
     const div = document.createElement('div');
-    div.className = 'comment-single';
+    div.className = 'comment-entry';
     div.innerHTML = `
-      <div class="comment-header">
+      <div class="comment-entry-meta">
         <strong>${escapeHTML(c.name)}</strong> • <span>${c.time}</span>
       </div>
-      <div class="comment-body">${escapeHTML(c.text)}</div>
+      <div class="comment-entry-text">${escapeHTML(c.text)}</div>
     `;
     if (isNew) {
       commentList.prepend(div);
@@ -118,12 +118,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!toast) {
       toast = document.createElement('div');
       toast.id = 'toast-msg';
-      toast.className = 'toast-msg';
+      toast.className = 'toast-notice';
       document.body.appendChild(toast);
     }
     toast.textContent = msg;
     toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 2500);
+    setTimeout(() => toast.classList.remove('show'), 2600);
   }
 
   function escapeHTML(str) {
